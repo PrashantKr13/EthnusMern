@@ -25,7 +25,7 @@ const DropdownMenu = () => {
       {menuOpen && (
         <div className="menu">
           <ul>
-            <li><Link to='/login' onClick={handleLogout}>Logout</Link></li>
+            <li><Link to='/' onClick={handleLogout}>Logout</Link></li>
           </ul>
         </div>
       )}
