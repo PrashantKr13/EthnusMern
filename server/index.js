@@ -14,7 +14,7 @@ app.use(cors())
 
 mongoose.connect("mongodb://localhost:27017/userData")
 
-app.post('/login', (req, res) => {
+app.post('/', (req, res) => {
     const { email, password } = req.body
     credentialModel.findOne({ email: email }).then(user => {
         if (user) {
