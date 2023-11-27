@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 
-mongoose.connect("mongodb://localhost:27017/userData")
+mongoose.connect("mongodb+srv://FitBrick12:lpZ1Qa9xH9jQa0ax@cluster0.etflkmy.mongodb.net/?retryWrites=true&w=majority")
 
 app.post('/', (req, res) => {
     const { email, password } = req.body
