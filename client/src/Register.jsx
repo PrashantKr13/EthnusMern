@@ -15,7 +15,7 @@ function SignUp(){
     const handleSubmit = (e) => {
         e.preventDefault()
         axios.post('http://localhost:3001/register', {name, email, password}).then(result=>{console.log(result)
-        navigate('/login')
+        navigate('/')
     }).catch(err=>console.log(err))
     }
 
@@ -46,7 +46,7 @@ function SignUp(){
                 </div>
                 <button type="submit" className="btn btn-primary">Register</button>
             </form>
-            <p className="mt-3">Already a user? <Link to="/login">Login</Link></p>
+            <p className="mt-3">Already a user? <Link to="/">Login</Link></p>
         </div>
     </div>
 </div>
