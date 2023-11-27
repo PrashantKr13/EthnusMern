@@ -16,7 +16,7 @@ function App() {
     <MyProvider>
     <BrowserRouter>
     <Routes>
-      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/' element={<Login/>}></Route>
       <Route path='/home' element={<Home/>}></Route>
       <Route path='/register' element={<SignUp/>}></Route>
       <Route path='/blog' element={<Blog/>}></Route>
